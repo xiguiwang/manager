@@ -26,6 +26,7 @@ endif()
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 include_directories(include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../../install/protocol/include)
 
 add_executable(test_node src/test_inteface_node.cpp)
 add_executable(test_node2 test/test.cpp)

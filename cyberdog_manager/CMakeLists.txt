@@ -28,7 +28,10 @@ find_package(low_power_consumption REQUIRED)
 find_package(ament_index_cpp REQUIRED)
 find_package(user_info_manager REQUIRED)
 
-include_directories(include)
+include_directories(include
+     ${CMAKE_CURRENT_SOURCE_DIR}/../low_power_consumption/include
+     ${CMAKE_CURRENT_SOURCE_DIR}/../../install/cyberdog_machine/include
+    )
 
 add_executable(${PROJECT_NAME} src/cyberdog_manager.cpp src/main.cpp)
 
